@@ -1,10 +1,13 @@
 import './navbar.css'
+import { CartWidget } from './cartWidget/cartWidget.js'
+
+
 
 export const Navbar = () => {
     return (
         <header className='navbar'>
-            <h1 className=''>CATFOUR</h1>
-            <ul>
+            <h1 className='catfour'>CATFOUR</h1>
+            <ul className='topbar'>
                 <li>
                     <a href=''>Home
                     </a>
@@ -21,7 +24,10 @@ export const Navbar = () => {
                     <a href=''>Nuestros gatitos
                     </a>
                 </li>
+                <CartWidget />  
             </ul>
+            
+
         </header>
     )
 }
